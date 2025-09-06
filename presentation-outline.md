@@ -3,7 +3,7 @@
 ### Slide 1: Title
 - "Student Mental Health Data Analysis"
 - Course: KICK-START-DATA SCIENCE(YPDC)
-- By: [Your Name]
+- By: [SOFIA GHULAM NABI]
 
 ### Slide 2: Libraries Used
 - pandas
@@ -23,13 +23,14 @@ Condition-based selection
 
 ### Slide 6: Visualizations
 - Gender Distribution (countplot)
-- Depression vs Sleep Quality (boxplot)
+- Depression vs ANXIETY(boxplot)
 - Correlation Heatmap
 
 ### Slide 7: Insights
-- Average sleep quality (depressed vs non-depressed)
+- Average DEPRESSION depressed vs non-depressed)
 - Percentage of students with depression
 
 ### Slide 8: Conclusion
 - Main findings summary
 - Importance of data analysis in student mental health
+
