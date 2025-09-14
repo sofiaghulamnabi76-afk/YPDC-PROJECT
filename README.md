@@ -166,7 +166,7 @@ print(df.describe())
 
 This project is licensed under the MIT License.
 
-📌 Conclusion
+## 📌 Conclusion
 This project shows:
 
 Majority of students are young and unmarried.
@@ -175,7 +175,7 @@ A noticeable number report depression and anxiety.
 
 Provides insights that can help in mental health policy planning for students.
 
-📜 Author
+## 📜 Author
 Sofia Ghulam Nabi
 3rd Semester, BS.DATA SCIENCE
 📧 sofiaghulamnabi76@gmail.com
