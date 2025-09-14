@@ -60,12 +60,23 @@ Verified using df.info() and df.isnull().sum() before and after cleaning.
 
 
 📊 Exploratory Data Analysis (EDA)
-<bv>
+
 1️⃣ Gender Distribution
+
+
+
 Bar chart showing number of male vs female students.
 
+
+
+
 2️⃣ Age Distribution
+
+
 Histogram + KDE curve to check age spread of students.
+
+
+
 
 3️⃣ Mental Health Insights
 Countplots for:
