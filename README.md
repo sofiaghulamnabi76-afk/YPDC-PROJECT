@@ -57,7 +57,10 @@ Filled missing values using mode (most frequent value).
 Dataset Check:
 Verified using df.info() and df.isnull().sum() before and after cleaning.
 
+
+
 📊 Exploratory Data Analysis (EDA)
+<bv>
 1️⃣ Gender Distribution
 Bar chart showing number of male vs female students.
 
