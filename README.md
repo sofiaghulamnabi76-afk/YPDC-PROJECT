@@ -136,4 +136,26 @@ df.loc[:, 'age_category'] = df['age'].apply(lambda x: 'Teen' if x < 20 else 'Adu
    ```bash
    pip install -r requirements.txt
    ```
+✅ Output Highlights
+Clean dataset saved as cleaned_student_mental_health.csv
+
+Interactive visualizations for key insights
+
+New column age_category created using .loc[]
+
+Presentation-ready notebook with explanations
+
+📌 Conclusion
+This project shows:
+
+Majority of students are young and unmarried.
+
+A noticeable number report depression and anxiety.
+
+Provides insights that can help in mental health policy planning for students.
+
+📜 Author
+SOFIA GHULAM NABI
+3rd Semester, BS.Data Science
+📧 sofiaghulamnabi76@gmail.com
 
