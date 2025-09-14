@@ -2,7 +2,7 @@
 YPDC project repository. Completed as part of the YPDC program, this project demonstrates my ability . The repository includes the project's codebase, documentation, and implementation details
 📊 Student Mental Health Analysis
 
-This project analyzes a *Student Mental Health Dataset* using *Pandas, **Matplotlib, and **Seaborn*.  
+This project analyzes a *Student Mental Health Dataset* using Pandas, Matplotlib, and Seaborn, Numpy  
 It includes *data cleaning, **visualization, and **insights* to understand mental health trends among students.
 
 ---
@@ -43,10 +43,6 @@ The dataset contains information about students’:
 | *Seaborn* | Advanced, beautiful visualizations (countplots, heatmaps) |
 | *Jupyter Notebook* | Interactive environment for step-by-step execution |
 
-Install libraries with:
-```bash
-pip install pandas matplotlib seaborn jupyter
-🧹 Data Cleaning Steps
 Column Name Cleaning:
 Removed extra spaces, converted names to lowercase, replaced spaces with _.
 
@@ -111,33 +107,7 @@ Clean dataset saved as cleaned_student_mental_health.csv
 Interactive visualizations for key insights
 
 New column age_category created using .loc[]
-
-Presentation-ready notebook with explanations
-
-📌 Conclusion
-This project shows:
-
-Majority of students are young and unmarried.
-
-A noticeable number report depression and anxiety.
-
-Provides insights that can help in mental health policy planning for students.
-
-📜 Author
-Your Name
-2nd Semester, Islamic Studies
-📧 your.email@example.com
-
-
-
-# Student Mental Health Analysis
-
-This project analyzes a dataset related to students' mental health. The dataset contains information about students' demographics, academic background, and mental health conditions such as depression, anxiety, and panic attacks. The goal of this project is to explore trends, patterns, and correlations in student mental health.
-
-## Dataset Columns
-
-The dataset contains the following columns:
-
+## Dataset columns
 - `Timestamp` – Time when the survey was submitted
 - `Choose your gender` – Gender of the student
 - `Age` – Age of the student
@@ -149,16 +119,6 @@ The dataset contains the following columns:
 - `Do you have Anxiety?` – Indicates if the student suffers from anxiety
 - `Do you have Panic attack?` – Indicates if the student experiences panic attacks
 - `Did you seek any specialist for a treatment?` – Whether the student sought professional help
-
-## Technologies Used
-
-- Python
-- Pandas
-- Matplotlib
-- Numpy
-- Seaborn
-- Jupyter Notebook (optional)
-
 ## Installation
 
 1. Clone the repository:  
@@ -206,6 +166,16 @@ print(df.describe())
 
 This project is licensed under the MIT License.
 
+📌 Conclusion
+This project shows:
 
-```
+Majority of students are young and unmarried.
 
+A noticeable number report depression and anxiety.
+
+Provides insights that can help in mental health policy planning for students.
+
+📜 Author
+Sofia Ghulam Nabi
+3rd Semester, BS.DATA SCIENCE
+📧 sofiaghulamnabi76@gmail.com
