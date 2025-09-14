@@ -107,25 +107,6 @@ df.loc[df['choose_your_gender'] == 'Female', ['choose_your_gender', 'age']]
 
 # Create a new column using loc
 df.loc[:, 'age_category'] = df['age'].apply(lambda x: 'Teen' if x < 20 else 'Adult')
-▶ How to Run
-Clone the Project / Download Files
-
-git clone <your-repo-link>
-Install Required Libraries
-
-pip install pandas matplotlib seaborn jupyter
-Run Jupyter Notebook
-
-jupyter notebook
-Open student_mental_health_project.ipynb
-Run cells one by one to see results and visualizations.
-
-✅ Output Highlights
-Clean dataset saved as cleaned_student_mental_health.csv
-
-Interactive visualizations for key insights
-
-New column age_category created using .loc[]
 ## Dataset columns
 - `Timestamp` – Time when the survey was submitted
 - `Choose your gender` – Gender of the student
@@ -156,45 +137,3 @@ New column age_category created using .loc[]
    pip install -r requirements.txt
    ```
 
-## Usage
-
-1. Load the dataset in Python using Pandas.
-2. Perform data cleaning and preprocessing as needed.
-3. Conduct analysis and visualizations to understand trends in mental health.
-
-Example:
-
-```python
-import pandas as pd
-
-# Load dataset
-df = pd.read_csv("student_mental_health.csv")
-
-# Basic exploration
-print(df.head())
-print(df.describe())
-```
-
-## Features
-
-* Analyze mental health trends among students
-* Explore relationships between demographics, academic performance, and mental health
-* Identify patterns in seeking professional help
-
-## License
-
-This project is licensed under the MIT License.
-
-## 📌 Conclusion
-This project shows:
-
-Majority of students are young and unmarried.
-
-A noticeable number report depression and anxiety.
-
-Provides insights that can help in mental health policy planning for students.
-
-## 📜 Author
-Sofia Ghulam Nabi
-3rd Semester, BS.DATA SCIENCE
-📧 sofiaghulamnabi76@gmail.com
