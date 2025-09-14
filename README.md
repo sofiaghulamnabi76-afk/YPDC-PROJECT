@@ -1,5 +1,135 @@
 # YPDC-PROJECT
 YPDC project repository. Completed as part of the YPDC program, this project demonstrates my ability . The repository includes the project's codebase, documentation, and implementation details
+📊 Student Mental Health Analysis
+
+This project analyzes a *Student Mental Health Dataset* using *Pandas, **Matplotlib, and **Seaborn*.  
+It includes *data cleaning, **visualization, and **insights* to understand mental health trends among students.
+
+---
+
+## 📂 Dataset Description
+
+The dataset contains information about students’:
+- *Gender*
+- *Age*
+- *Course*
+- *Current Year of Study*
+- *CGPA*
+- *Marital Status*
+- *Depression, Anxiety, Panic Attacks*
+- *Treatment seeking behavior*
+
+---
+
+## 🎯 Project Objectives
+
+- Clean and prepare the dataset for analysis  
+- Visualize key insights:
+  - Gender Distribution
+  - Age Distribution
+  - Depression, Anxiety, Panic Attack Count
+  - Marital Status Pie Chart
+  - Correlation Heatmap (Numerical Relationships)
+- Learn and apply **.iloc[]** and **.loc[]** for data selection
+
+---
+
+## 🛠 Libraries Used
+
+| Library | Purpose |
+|--------|---------|
+| *Pandas* | Data loading, cleaning, manipulation |
+| *Matplotlib* | Basic visualizations (bar charts, histograms, pie charts) |
+| *Seaborn* | Advanced, beautiful visualizations (countplots, heatmaps) |
+| *Jupyter Notebook* | Interactive environment for step-by-step execution |
+
+Install libraries with:
+```bash
+pip install pandas matplotlib seaborn jupyter
+🧹 Data Cleaning Steps
+Column Name Cleaning:
+Removed extra spaces, converted names to lowercase, replaced spaces with _.
+
+Missing Values Handling:
+Filled missing values using mode (most frequent value).
+
+Dataset Check:
+Verified using df.info() and df.isnull().sum() before and after cleaning.
+
+📊 Exploratory Data Analysis (EDA)
+1️⃣ Gender Distribution
+Bar chart showing number of male vs female students.
+
+2️⃣ Age Distribution
+Histogram + KDE curve to check age spread of students.
+
+3️⃣ Mental Health Insights
+Countplots for:
+
+Depression
+
+Anxiety
+
+Panic Attacks
+
+4️⃣ Marital Status
+Pie chart showing percentage of married vs unmarried students.
+
+5️⃣ Correlation Heatmap
+Visual representation of relationships between numerical features.
+
+🔍 Using .iloc[] and .loc[]
+.iloc[] (Index-Based Selection)
+Select data using row/column index numbers.
+
+# Select first 5 rows & first 3 columns
+df.iloc[0:5, 0:3]
+.loc[] (Label-Based Selection)
+Select data using row/column names or conditions.
+
+# Select only Female students with their Age
+df.loc[df['choose_your_gender'] == 'Female', ['choose_your_gender', 'age']]
+
+# Create a new column using loc
+df.loc[:, 'age_category'] = df['age'].apply(lambda x: 'Teen' if x < 20 else 'Adult')
+▶ How to Run
+Clone the Project / Download Files
+
+git clone <your-repo-link>
+Install Required Libraries
+
+pip install pandas matplotlib seaborn jupyter
+Run Jupyter Notebook
+
+jupyter notebook
+Open student_mental_health_project.ipynb
+Run cells one by one to see results and visualizations.
+
+✅ Output Highlights
+Clean dataset saved as cleaned_student_mental_health.csv
+
+Interactive visualizations for key insights
+
+New column age_category created using .loc[]
+
+Presentation-ready notebook with explanations
+
+📌 Conclusion
+This project shows:
+
+Majority of students are young and unmarried.
+
+A noticeable number report depression and anxiety.
+
+Provides insights that can help in mental health policy planning for students.
+
+📜 Author
+Your Name
+2nd Semester, Islamic Studies
+📧 your.email@example.com
+
+
+
 # Student Mental Health Analysis
 
 This project analyzes a dataset related to students' mental health. The dataset contains information about students' demographics, academic background, and mental health conditions such as depression, anxiety, and panic attacks. The goal of this project is to explore trends, patterns, and correlations in student mental health.
