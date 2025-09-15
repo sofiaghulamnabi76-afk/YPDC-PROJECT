@@ -1,6 +1,6 @@
-By using these libraries i can 
-perform data analysis and visualization tasks effectively:
 pandas
 numpy
 matplotlib
 seaborn
+scikit-learn
+jupyter
