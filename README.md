@@ -1,161 +1,169 @@
-# YPDC-PROJECT
-YPDC project repository. Completed as part of the YPDC program, this project demonstrates my ability . The repository includes the project's codebase, documentation, and implementation detail
 
+# YPDC Project: Student Mental Health Analysis & Prediction
 
-
-
-
-📊 Student Mental Health Analysis
-
-This project analyzes a *Student Mental Health Dataset* using Pandas, Matplotlib, and Seaborn, Numpy  
-It includes *data cleaning, **visualization, and **insights* to understand mental health trends among students.
+**Author:** Sofia Ghulam Nabi  
+**Email:** sofiaghulamnabi76@gmail.com  
+**Program:** YPDC (BS Data Science)  
 
 ---
 
-## 📂 Dataset Description
+## Table of Contents
 
-The dataset contains information about students’:
-- *Gender*
-- *Age*
-- *Course*
-- *Current Year of Study*
-- *CGPA*
-- *Marital Status*
-- *Depression, Anxiety, Panic Attacks*
-- *Treatment seeking behavior*
-
----
-
-## 🎯 Project Objectives
-
-- Clean and prepare the dataset for analysis  
-- Visualize key insights:
-  - Gender Distribution
-  - Age Distribution
-  - Depression, Anxiety, Panic Attack Count
-  - Marital Status Pie Chart
-  - Correlation Heatmap (Numerical Relationships)
-- Learn and apply **.iloc[]** and **.loc[]** for data selection
+1. [Project Overview](#project-overview)  
+2. [Dataset Description](#dataset-description)  
+3. [Objectives](#objectives)  
+4. [What’s New / Added Features](#whats-new--added-features)  
+5. [Libraries & Tools](#libraries--tools)  
+6. [Model Training](#model-training)  
+7. [Exploratory Data Analysis (EDA) & Visualization](#exploratory-data-analysis-eda--visualization)  
+8. [How to Run](#how-to-run)  
+9. [Results & Insights](#results--insights)  
+10. [Future Work](#future-work)  
+11. [License](#license)  
 
 ---
 
-## 🛠 Libraries Used
+## Project Overview
 
-| Library | Purpose |
-|--------|---------|
-| *Pandas* | Data loading, cleaning, manipulation |
-| *Matplotlib* | Basic visualizations (bar charts, histograms, pie charts) |
-| *Seaborn* | Advanced, beautiful visualizations (countplots, heatmaps) |
-| *Jupyter Notebook* | Interactive environment for step-by-step execution |
+This project performs a comprehensive analysis of **student mental health data** collected via a survey.
 
-Column Name Cleaning:
-Removed extra spaces, converted names to lowercase, replaced spaces with _.
+- Analyzes depression, anxiety, and panic attacks  
+- Explores demographic patterns (gender, age, marital status, academic year, CGPA)  
+- Builds a predictive model to foresee the likelihood of mental health issues, enabling early intervention  
 
-Missing Values Handling:
-Filled missing values using mode (most frequent value).
+---
 
-Dataset Check:
-Verified using df.info() and df.isnull().sum() before and after cleaning.
+## Dataset Description
 
+The dataset contains the following fields:
 
+| Field | Description |
+|---|---|
+| Gender | Student gender |
+| Age | Student age |
+| Course | Course/program name |
+| Current Year of Study | 1st, 2nd, … etc |
+| CGPA | Cumulative Grade Point Average |
+| Marital Status | Married / Unmarried / Other |
+| Depression / Anxiety / Panic Attacks | Yes / No responses |
+| Treatment Seeking Behavior | Whether the student visited a specialist for treatment |
 
-📊 Exploratory Data Analysis (EDA)
+---
 
-1️⃣ Gender Distribution
+## Objectives
 
+- Data cleaning & preprocessing  
+- Visualization of key trends  
+- Build a predictive model for mental health issues  
+- Identify risk factors & high-risk groups  
 
+---
 
-Bar chart showing number of male vs female students.
+## What’s New / Added Features
 
+- **Machine Learning Model Training:** Supervised ML model added (Logistic Regression / Decision Tree / Random Forest) to predict the likelihood of mental health issues.  
+- **Improved Visualizations:** Matplotlib plots updated with better labels, titles, legends, and improved readability.  
+- **Feature Engineering:** Added `age_category` column to classify students into Teen / Adult groups.
 
+---
 
+## Libraries & Tools
 
-2️⃣ Age Distribution
+- **Pandas** – Data manipulation and cleaning  
+- **NumPy** – Numerical operations  
+- **Matplotlib** – Custom visualizations (bar charts, histograms, pie charts, etc.)  
+- **Seaborn** – Enhanced statistical plotting  
+- **Scikit‑learn** – Model training and evaluation  
+- **Jupyter Notebook** – Interactive analysis environment  
 
+---
 
-Histogram + KDE curve to check age spread of students.
+## Model Training
 
+**Steps followed:**
 
+1. **Preprocessing:**  
+   - Filled missing values  
+   - Encoded categorical variables  
+   - Created new features (like `age_category`)  
 
+2. **Feature Selection:**  
+   - Correlation analysis to remove redundant features  
 
-3️⃣ Mental Health Insights
-Countplots for:
+3. **Modeling:**  
+   - Train-test split (80/20)  
+   - Tried multiple ML models: Logistic Regression, Decision Tree, Random Forest  
+   - Evaluated using cross-validation  
 
-Depression
+4. **Evaluation Metrics:**  
+   - Accuracy, Precision, Recall, F1‑Score  
+   - Confusion Matrix  
+   - ROC Curve & AUC where applicable  
 
-Anxiety
+---
 
-Panic Attacks
+## Exploratory Data Analysis (EDA) & Visualization
 
-4️⃣ Marital Status
-Pie chart showing percentage of married vs unmarried students.
+EDA included:
 
-5️⃣ Correlation Heatmap
-Visual representation of relationships between numerical features.
+- Gender-wise mental health condition barplots  
+- Age distribution histograms with KDE curves  
+- Marital status pie charts  
+- Correlation heatmaps for numerical features  
+- CGPA vs Mental Health condition plots  
 
-🔍 Using .iloc[] and .loc[]
-.iloc[] (Index-Based Selection)
-Select data using row/column index numbers.
+Matplotlib & Seaborn have been used with improved formatting and better aesthetics for presentations.
 
-# Select first 5 rows & first 3 columns
-df.iloc[0:5, 0:3]
-.loc[] (Label-Based Selection)
-Select data using row/column names or conditions.
+---
 
-# Select only Female students with their Age
-df.loc[df['choose_your_gender'] == 'Female', ['choose_your_gender', 'age']]
-
-# Create a new column using loc
-df.loc[:, 'age_category'] = df['age'].apply(lambda x: 'Teen' if x < 20 else 'Adult')
-## Dataset columns
-- `Timestamp` – Time when the survey was submitted
-- `Choose your gender` – Gender of the student
-- `Age` – Age of the student
-- `What is your course?` – The course or program the student is enrolled in
-- `Your current year of Study` – Year of study (e.g., 1st, 2nd, 3rd year)
-- `What is your CGPA?` – Current CGPA of the student
-- `Marital status` – Marital status of the student
-- `Do you have Depression?` – Indicates if the student suffers from depression
-- `Do you have Anxiety?` – Indicates if the student suffers from anxiety
-- `Do you have Panic attack?` – Indicates if the student experiences panic attacks
-- `Did you seek any specialist for a treatment?` – Whether the student sought professional help
-## Installation
+## How to Run
 
 1. Clone the repository:  
-   ```bash
-   git clone https://github.com/sofiaghulamnabi76-afk/YPDC-PROJECT.git
-````
 
-2. Navigate to the project folder:
+```bash
+git clone https://github.com/sofiaghulamnabi76-afk/YPDC-PROJECT.git
+```
 
-   ```bash
-   cd student-mental-health
-   ```
-3. Install required packages:
+2. Navigate into the project directory:  
 
-   ```bash
-   pip install -r requirements.txt
-   ```
-✅ Output Highlights
-Clean dataset saved as cleaned_student_mental_health.csv
+```bash
+cd YPDC-PROJECT
+```
 
-Interactive visualizations for key insights
+3. Install dependencies:  
 
-New column age_category created using .loc[]
+```bash
+pip install -r requirements.txt
+```
 
-Presentation-ready notebook with explanations
+4. Run Jupyter Notebook:  
 
-📌 Conclusion
-This project shows:
+```bash
+jupyter notebook analysis.ipynb
+```
 
-Majority of students are young and unmarried.
+---
 
-A noticeable number report depression and anxiety.
+## Results & Insights
 
-Provides insights that can help in mental health policy planning for students.
+- Depression and anxiety are relatively common among students  
+- Significant differences observed between gender and age groups  
+- CGPA and Year of Study have a moderate effect  
+- Model performance achieved: **(Add your final accuracy/F1 score here)**  
 
-📜 Author
-SOFIA GHULAM NABI
-3rd Semester, BS.Data Science
-📧 sofiaghulamnabi76@gmail.com
+---
 
+## Future Work
+
+- Collect more data for better generalization  
+- Add more features like socioeconomic background, lifestyle, academic stress levels  
+- Deploy model as a web dashboard or API  
+- Perform hyperparameter tuning and try ensemble methods for better accuracy  
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.
+
+---
