@@ -59,12 +59,6 @@ The dataset contains the following fields:
 
 ---
 
-## What’s New / Added Features
-
-- **Machine Learning Model Training:** Supervised ML model added (Logistic Regression / Decision Tree / Random Forest) to predict the likelihood of mental health issues.  
-- **Improved Visualizations:** Matplotlib plots updated with better labels, titles, legends, and improved readability.  
-- **Feature Engineering:** Added `age_category` column to classify students into Teen / Adult groups.
-
 ---
 
 ## Libraries & Tools
