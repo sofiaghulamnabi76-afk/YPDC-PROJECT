@@ -143,7 +143,7 @@ jupyter notebook analysis.ipynb
 - Depression and anxiety are relatively common among students  
 - Significant differences observed between gender and age groups  
 - CGPA and Year of Study have a moderate effect  
-- Model performance achieved: **(Add your final accuracy/F1 score here)**  
+- Model performance achieved: 
 
 ---
 
