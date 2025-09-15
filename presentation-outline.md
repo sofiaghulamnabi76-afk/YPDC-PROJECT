@@ -1,13 +1,17 @@
 📊 Presentation Outline
-<bd>
+
+
 Slide 1: Title Slide
-<bd>
+
+
 Title: YPDC Project: Student Mental Health Analysis & Prediction
-<bd>
+
 
 Subtitle: By Sofia Ghulam Nabi | BS Data Science
 
 Slide 2: Project Overview
+
+
 Purpose of project
 
 Importance of mental health analysis
@@ -15,11 +19,15 @@ Importance of mental health analysis
 How predictive model helps in early intervention
 
 Slide 3: Dataset Description
+
+
 List of dataset features (Gender, Age, CGPA, Marital Status, Depression, Anxiety etc.)
 
-Source of data (if available)
+Source of data
 
 Slide 4: Objectives
+
+
 Data cleaning and preprocessing
 
 Perform EDA
@@ -29,6 +37,8 @@ Build ML model
 Identify risk factors for mental health issues
 
 Slide 5: What's New
+
+
 Added ML model training (Logistic Regression, Decision Tree, Random Forest)
 
 Improved Matplotlib visualizations
@@ -77,6 +87,7 @@ Add psychological & lifestyle features
 Deploy as web dashboard
 
 Hyperparameter tuning & ensemble models
+
 
 
 
