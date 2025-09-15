@@ -1,6 +1,9 @@
 📊 Presentation Outline
+<bd>
 Slide 1: Title Slide
+<bd>
 Title: YPDC Project: Student Mental Health Analysis & Prediction
+<bd>
 
 Subtitle: By Sofia Ghulam Nabi | BS Data Science
 
@@ -74,6 +77,7 @@ Add psychological & lifestyle features
 Deploy as web dashboard
 
 Hyperparameter tuning & ensemble models
+
 
 
 
