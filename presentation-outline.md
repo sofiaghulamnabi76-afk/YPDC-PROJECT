@@ -1,36 +1,79 @@
 📊 Presentation Outline
+Slide 1: Title Slide
+Title: YPDC Project: Student Mental Health Analysis & Prediction
 
-### Slide 1: Title
-- "Student Mental Health Data Analysis"
-- Course: KICK-START-DATA SCIENCE(YPDC)
-- By: [SOFIA GHULAM NABI]
+Subtitle: By Sofia Ghulam Nabi | BS Data Science
 
-### Slide 2: Libraries Used
-- pandas
-- numpy
-- matplotlib
-- seaborn
+Slide 2: Project Overview
+Purpose of project
 
-### Slide 3: Dataset Overview
-- Number of rows & columns
-- Key columns: Gender, Age, Sleep quality, Depression
+Importance of mental health analysis
 
-### Slide 4: iloc 
-Index-based selection
+How predictive model helps in early intervention
 
-### Slide 5: loc 
-Condition-based selection
+Slide 3: Dataset Description
+List of dataset features (Gender, Age, CGPA, Marital Status, Depression, Anxiety etc.)
 
-### Slide 6: Visualizations
-- Gender Distribution (countplot)
-- Depression vs ANXIETY(boxplot)
-- Correlation Heatmap
+Source of data (if available)
 
-### Slide 7: Insights
-- Average DEPRESSION depressed vs non-depressed)
-- Percentage of students with depression
+Slide 4: Objectives
+Data cleaning and preprocessing
 
-### Slide 8: Conclusion
-- Main findings summary
-- Importance of data analysis in student mental health
+Perform EDA
+
+Build ML model
+
+Identify risk factors for mental health issues
+
+Slide 5: What's New
+Added ML model training (Logistic Regression, Decision Tree, Random Forest)
+
+Improved Matplotlib visualizations
+
+Added feature engineering (Age Category column)
+
+Slide 6: Libraries & Tools
+Pandas, NumPy
+
+Matplotlib, Seaborn
+
+Scikit-learn
+
+Jupyter Notebook
+
+Slide 7: Model Training
+Data preprocessing steps
+
+Feature selection
+
+Train-test split
+
+Model evaluation (Accuracy, Precision, Recall, F1-Score)
+
+Slide 8: EDA & Visualization
+Bar plots (gender vs mental health)
+
+Age distribution histogram
+
+Pie chart (marital status)
+
+Correlation heatmap
+
+Slide 9: Results & Insights
+Key findings from analysis
+
+Observed patterns in gender, age, CGPA
+
+Final model performance (accuracy / F1 score)
+
+Slide 10: Future Work
+Collect more data
+
+Add psychological & lifestyle features
+
+Deploy as web dashboard
+
+Hyperparameter tuning & ensemble models
+
+
 
